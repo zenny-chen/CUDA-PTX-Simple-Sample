@@ -31,6 +31,7 @@ int main(void)
     auto const constMemSize = props.totalConstMem;
 
     printf("Current GPU: %s\n", props.name);
+    printf("compute capability: %d.%d\n", props.major, props.minor);
     printf("max blocks per SM: %d\n", maxBlocksPerSM);
     printf("max threads per block: %d\n", maxThreadsPerBlock);
     printf("max threads per SM: %d\n", maxThreadsPerSM);
